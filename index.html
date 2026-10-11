@@ -1,12 +1,14 @@
 <!doctype html>
 <html lang="zh-CN">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="DynaPlanet 旗下 B站工具箱，面向 Chrome 与 Edge 的独立浏览器扩展。查看当前功能、使用说明、支持方式及隐私政策。"><title>B站工具箱 · DynaPlanet</title><link rel="stylesheet" href="docs.css"><link rel="stylesheet" href="home.css"></head>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="B站工具箱，为评论添加公开性别和地区标记。Chrome / Edge 扩展，由 AzusaDP 制作。"><title>B站工具箱 · DynaPlanet</title><link rel="stylesheet" href="docs.css"><link rel="stylesheet" href="home.css"></head>
 <body>
-<header class="masthead"><a class="brand" href="index.html">DynaPlanet<span>独立工具 · AzusaDP</span></a><nav aria-label="主导航"><a href="#features">功能</a><a href="help.html">使用说明</a><a href="privacy.html">隐私政策</a></nav></header>
+<header class="masthead"><a href="index.html" class="brand">DynaPlanet</a><nav aria-label="主导航"><a href="help.html">使用说明</a><a href="privacy.html">隐私政策</a></nav></header>
 <main>
-<section class="hero"><span class="eyebrow">BILIBILI TOOLBOX / CHROME &amp; EDGE</span><h1>B站工具箱</h1><p class="lead">从评论开始，<br>让 B站用起来更顺手。</p><p class="intro">把评论中已有的公开资料放在更容易看见的位置。当前版本提供评论资料标记，后续功能会逐步加入。</p><div class="actions"><a class="primary" href="help.html">了解如何使用 ↗</a><a href="privacy.html">阅读隐私政策</a></div><p class="release">v1.0.13 · 商店发布准备中，安装链接尚未开放</p></section>
-<section id="features"><span class="eyebrow">01 / 当前功能</span><h2>资料在昵称旁，阅读不中断。</h2><div class="demo" aria-label="评论资料标记的虚构示意"><p class="muted">界面示意 · 虚构用户</p><p><span class="gender">♂</span><span class="region">广东</span><strong>示例用户</strong></p><p>在昵称前展示公开性别与该条评论的 IP 属地。</p></div><dl class="features"><div><dt>主评论与楼中楼</dt><dd>为兼容的桌面评论区添加资料标记，随新评论加载更新。</dd></div><div><dt>按你的习惯显示</dt><dd>切换图标与文字，选择是否显示保密、未获取和 IP 属地。</dd></div><div><dt>按需补查，短时缓存</dt><dd>可见评论缺少性别字段时，可向 B站公开资料卡补查；补查和会话缓存均可关闭。</dd></div></dl><p class="muted">标记来自用户自行填写的资料及 B站提供的评论属地，不代表经过验证的真实身份或实时位置。当前不支持普通视频弹幕。</p></section>
-<section class="privacy-block"><span class="eyebrow">02 / 隐私与控制</span><h2>知道读了什么，也能随时关掉。</h2><p>设置保存在本机，主动查询结果只作会话内存缓存。扩展没有开发者数据服务器，不使用广告或分析追踪。查询公开资料时，UID 会发送给 B站。</p><p><a href="privacy.html">查看完整的数据处理、权限和清除说明 →</a></p><p class="muted">每项新增功能都会单独说明。涉及数据处理或权限变化时，会同步更新隐私政策。</p></section>
-<section id="support"><span class="eyebrow">03 / 支持</span><h2>遇到问题，联系制作人。</h2><p>B站工具箱由 DynaPlanet 旗下制作人 AzusaDP 制作与维护。</p><p>支持与隐私联系：<a href="mailto:azusadp@outlook.com">azusadp@outlook.com</a></p><p class="muted">反馈时请附扩展版本、浏览器版本和复现步骤。截图请遮挡个人资料；不要发送密码、Cookie 或验证码。</p></section>
-</main><footer><p>DynaPlanet · AzusaDP · B站工具箱</p><p>独立开发，与哔哩哔哩、Google 或 Microsoft 不存在官方关联。</p><a href="privacy.html">隐私政策</a> · <a href="help.html">使用说明</a></footer>
+<section class="intro"><p class="release">Chrome / Edge 扩展 · v1.0.13</p><h1>B站工具箱</h1><p class="summary">给 B站评论加上性别和地区标记。</p><p>目前先做了评论区，主评论和楼中楼都能用。后面会继续加功能。</p><p class="status">商店版还在准备中，发布后会在这里放安装链接。</p></section>
+<section aria-labelledby="demo-title"><h2 id="demo-title">显示效果</h2><figure class="demo"><div class="demo-user"><span class="avatar" aria-hidden="true">例</span><div><div class="name-row"><span class="gender" aria-label="男">♂</span><span class="region">地区</span><span class="username">示例用户</span></div><p class="comment">标记会出现在昵称前面。</p></div></div><figcaption>示意内容，不对应真实用户。</figcaption></figure></section>
+<section><h2>可以做什么</h2><ul class="feature-list"><li>显示公开性别和评论地区，主评论、楼中楼都支持。</li><li>切换图标或文字，选择是否显示保密和未获取的结果。</li><li>自动补查缺失的性别资料，短时缓存结果。这两项都可以关闭。</li></ul><p class="note">性别来自用户填写的资料；地区来自 B站为这条评论提供的 IP 属地，不是精确位置。没有资料时不会猜测。目前不支持普通视频弹幕。</p><a href="help.html">查看使用说明</a></section>
+<section><h2>关于数据</h2><p>设置保存在本机。补查时会把用户 UID 发给 B站，结果最多缓存 30 分钟，可以手动清除。扩展不向我们上传数据，没有广告和统计追踪。</p><a href="privacy.html">隐私政策</a></section>
+<section class="contact"><h2>反馈</h2><p>有问题可以发邮件到 <a href="mailto:azusadp@outlook.com">azusadp@outlook.com</a>。</p><p class="note">请带上扩展版本、浏览器版本和复现步骤。截图记得遮住个人信息，不要发送密码、Cookie 或验证码。</p></section>
+</main>
+<footer><p>DynaPlanet 旗下工具 · AzusaDP 制作与维护</p><p>独立开发，与哔哩哔哩、Google、Microsoft 无官方关联。</p></footer>
 </body></html>
